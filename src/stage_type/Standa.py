@@ -11,10 +11,10 @@ class Standa:
     """
     if getattr(sys, 'frozen', False):
         application_path: str = sys._MEIPASS
+        dll_file = os.path.join(application_path, "src\\libs\\libximc.dll")
     else:
         application_path: str = Path(__file__).parents[1]
-
-    dll_file = os.path.join(application_path, "libs\\libximc.dll")
+        dll_file = os.path.join(application_path, "libs\\libximc.dll")
     lib = WinDLL(dll_file)
     lib_cdecl = CDLL(dll_file)
 
