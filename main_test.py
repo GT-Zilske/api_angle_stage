@@ -1,6 +1,5 @@
 from src.api_angle_stage import AngleStageAPI
 
-
 def main():
     api = AngleStageAPI()
     stage = api.get_stage_object("StandaTwoAxes")

@@ -1,4 +1,4 @@
-from src.stage_type.STANDA import Standa
+from src.stage_type.Standa import Standa
 
 
 class StandaTwoAxes:
